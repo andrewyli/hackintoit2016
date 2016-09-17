@@ -17,9 +17,7 @@
 
 	<!-- Signup Form -->
 	<form id="signup-form" method="post" action="http://localhost:5000/thankyou">
-            <input type="text" value="Username" />
-	    <input type="password" value="Password" />
-	    <input type="submit" value="Go" />
+	    <input type="submit" value="View Results" />
 	</form>
 
 	<!-- Scripts -->

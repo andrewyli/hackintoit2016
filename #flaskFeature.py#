@@ -146,6 +146,8 @@ def main(job_title):
     #print(naics_predictions)
     return create_rank(naics_predictions, salary), salary, naics_predictions
 
+
+
 """
 with open("/Users/jtstog/linkedin_export.csv") as file:
     csv = [[a.replace('"',"") for a in x.strip().split(",")] for x in file.readlines()]
