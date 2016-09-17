@@ -16,7 +16,7 @@ def parse_csv(csv_location):
     return [df[x].tolist() for x in df]
 
 contacts_result = parse_csv('linkedin_connections_export.csv')
-output = [["First Name", "Last Name", "Email", "Company", "Job Title", "Composite Score", "Starting Salary"]]
+output = []
 
 @app.route("/")
 def hello_world(name=None):
@@ -51,7 +51,7 @@ def thankyou():
 @app.route('/tablepage', methods = ['POST', 'GET'])
 def tablepage():
     with open("./templates/tablepage.html", "w") as f:
-        f.write(email_table(output))
+        f.write(email_table([["First Name", "Last Name", "Email", "Company", "Job Title", "Composite Score", "Starting Salary"]] + output))
     return render_template("tablepage.html", result=result)
 
 class SendMessage:
