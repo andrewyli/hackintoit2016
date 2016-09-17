@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+
+<head>
+  <script type="in/Login"></script>
+  <script type="text/javascript" src="http://platform.linkedin.com/in.js">
+    api_key: 77ibyvh6jacczn
+    authorize: True
+    onLoad: onLinkedInLoad
+  </script>
+  <link rel="stylesheet" type="text/css" href="mystyle.css">
+</head>
+
+<body>
+  Hello, World!
+</body>
