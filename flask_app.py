@@ -30,7 +30,7 @@ def result():
 def thankyou():
     thankyou_result = request.form
     global output
-    for j in range(3):
+    for j in range(20):
         try:
             summary = main(contacts_result[4][j])
         except:
